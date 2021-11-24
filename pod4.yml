@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod4
+  labels:
+    app: helloworld
+  spec: 
+    containers:
+    - name: customjavawithlabel
+      image: amintarebecca975/java-docker
+      ports:
+      - name: nodejs-port
+        containerPort: 3000
