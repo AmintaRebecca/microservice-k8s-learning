@@ -1,5 +1,5 @@
 apiVersion: 1
-kind: service
+kind: Service
 metadata:
   name: helloworldservice
 spec:
@@ -9,5 +9,5 @@ spec:
     targetPort: nodejs-port
     protocol: TCP
   selector:
-    app:helloworld
+    app: helloworld
   type: NodePort
